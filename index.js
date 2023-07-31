@@ -10,11 +10,10 @@ Array.from(document.getElementsByTagName("pages")[0].children).forEach(page =>{
     fetch(page.tagName.toLowerCase()).then(response => {
         response.text().then(content => {
             page.innerHTML = content;
+            Array.from(page.children).forEach(block=>{
+                block.style.background = randomBG();
+            });
         })
-    });
-
-    Array.from(page.children).forEach(block=>{
-        block.style.background = randomBG();
     });
 });
 
