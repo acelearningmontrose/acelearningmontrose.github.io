@@ -1,0 +1,198 @@
+/*Made by Zoxplers - zoxplers.com*/
+
+/*Fonts*/
+@font-face
+{
+    font-family: 'Material Symbols Rounded';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v126/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2) format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Bubblegum Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/bubblegumsans/v16/AYCSpXb_Z9EORv1M5QTjEzMEteaAxII.woff2) format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Secular One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/secularone/v12/8QINdiTajsj_87rMuMdKyqDiOOg.woff2) format('woff2');
+}
+
+@font-face
+{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://fonts.gstatic.com/s/quicksand/v30/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkCEv58a-wg.woff2) format('woff2');
+}
+
+/*Pseudo*/
+:root
+{
+    --avg: calc((1vw + 1vh) / 2);
+}
+
+navmenu navitem:hover
+{
+    color: white;   
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+/*Tags*/
+a
+{
+    color: unset;
+    text-decoration: unset;
+}
+
+body
+{
+    margin: 0;
+    overflow: scroll;
+    background: #CEE5D5;
+    color: #f0f0f0;
+    font-size: var(--avg);
+    font-family: sans-serif;
+}   
+
+heading
+{
+    padding: calc(1.5vh + 1vw) 0;
+    display: block;
+    background: #89C8CC;
+    width: 100vw;
+    text-align: center;
+    font-family: "Bubblegum Sans";
+    text-shadow: 0.1vw 0.1vh rgba(53, 53, 53, 0.53);
+}
+
+heading1
+{
+    display: block;
+    font-size: min(9.25vw,7.25vh);
+    max-height: 15vh;
+}
+
+heading2
+{
+    display: block;
+    font-size: min(4.5vw,3.5vh);
+}
+
+navmenu
+{
+    display: block;
+    background: #5E8084;
+    height: 5vh;
+    border-top: 0.5vh solid #C0DCDE;
+    font-family: "Secular One";
+    text-align: center;
+    font-size: min(6vw, 2.4vh);
+}
+
+navitem
+{
+    display: inline-block;
+    margin: 0 1.3vw;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+navitem span
+{
+    position: relative;
+    top: 2.8vh;
+    font-size: min(4.5vw, 3vh);
+}
+
+navitem text
+{
+    position: relative;
+    left: 0.1vw;
+    top: 2.5vh;
+}
+
+pages
+{
+    display: block;
+    background: #ffffff50;
+    width: 100vw;
+    max-width: 125vh;
+    min-height: 74vh;
+    margin: 0 auto;
+    font-family: "Quicksand";
+    font-size: calc(var(--avg) * 1.2 + 5px);
+    padding: 1.5vh 0;
+}
+
+pages img
+{
+    max-width: 25%;
+}
+
+pages > *
+{
+    display: none;
+}
+
+pages > * > *
+{
+    display: block;
+    background: black;
+    width: 70%;
+    margin: 1.5vh auto;
+    border-radius: var(--avg);
+    padding: 2vh 1vw;
+    box-shadow: 0 0 var(--avg) white;
+}
+
+pages > * > *::first-line
+{
+    font-size: calc(var(--avg) * 1.4 + 6px);
+}
+
+footing
+{
+    display: block;
+    background: #5E8084;
+    min-height: 10vh;
+    width: 100vw;
+    max-width: 125vh;
+    margin: auto;
+    text-align: center;
+    padding: 1.25vh 0;
+}
+
+/*Classes*/
+.material-symbols-rounded
+{
+    font-family: 'Material Symbols Rounded';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.selected
+{
+    display: block;
+} 
